@@ -1,0 +1,261 @@
+:root {
+    --dark: #293449;
+    --bg-gray: #F1F5F7;
+    --red: #EE3643;
+    --bezh: #F9F5F0;
+}
+
+body {
+    font-family: "Cuprum", Arial, sans-serif;
+}
+
+header, .services {
+    background-color: var(--bg-gray);
+}
+
+header {
+    padding-bottom: 40px;
+}
+
+section {
+    padding: 50px 0;
+    background-color: white;
+}
+
+.fixed-container {
+    max-width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dark {
+    background-color: var(--dark);
+}
+
+.top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    height: 42px;
+}
+
+.mid-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.sub-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    background-color: #32425C;
+}
+
+.top-menu button {
+    border: 0;
+}
+
+.top-menu div {
+    height: inherit;
+    padding: 0;
+}
+
+.dark-btn {
+    background-color: transparent;
+    height: 100%;
+}
+
+.logo-btn {
+    background-color: var(--red);
+    height: 47px;
+    width: 220px;
+    align-content: center;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+
+.order-btn {
+    background-color: #63A63E;
+    height: 42px;
+}
+
+.mid-menu-btn {
+    height: 45px;
+    background-color: white;
+    border: 0;
+    padding: 0 20px;
+    margin: 5px 0;
+}
+
+.sub-menu button {
+    border: 0;
+    background-color: transparent;
+    height: 100%;
+}
+
+.description {
+    max-width: 197px;
+    color: var(--red);
+}
+
+.contacts {
+    width: 270px;
+    text-align: center;
+}
+
+.contacts > button {
+    width: 100%;
+    height: 45px;
+    color: var(--red);
+    background-color: var(--bg-gray);
+    border-style: solid;
+    border-color: white;
+}
+
+.contacts a {
+    font-size: 14px;
+
+}
+
+.mart-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.sm-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 300px;
+    height: 123px;
+    margin: 8px 0;
+    padding: 0 25px;
+}
+
+.sm-item > div {
+    max-width: 145px;
+}
+
+.mart-items img {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.item-btn {
+    border: 0;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0 20px;
+    font-weight: 400;
+}
+
+.lg-item {
+    background-color: #3BBCE3;
+    width: 620px;
+    height: 266px;
+    margin: 8px 0;
+}
+
+.lg-item > div {
+    height: 45%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px 25px 0;
+}
+
+.double {
+    width: 300px;
+}
+
+.materials, .delivery {
+    background-color: #FFBF47;
+}
+
+.tools {
+    background-color: #3BBCE3;
+}
+
+.tech {
+    background-color: #DC91D8;
+}
+
+.discount {
+    background-color: #8ED78F;
+}
+
+.pop-header {
+    background-color: var(--bezh);
+    height: 89px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pop-header button {
+    background-color: var(--red);
+    border: 0;
+    color: white;
+    width: 192px;
+    height: 38px;
+}
+
+.goods {
+    max-width: 220px;
+    height: 318px;
+    border: 1px solid #EAEAEA;
+    align-content: end;
+    padding-bottom: 20px;
+}
+
+.sm-rect {
+    background-color: var(--dark);
+    width: 300px;
+    height: 123px;
+    margin: 10px;
+}
+
+.lg-rect {
+    background-color: var(--dark);
+    width: 620px;
+    height: 233px;
+    margin: 10px;
+}
+
+.new {
+    display: block;
+    margin-left: auto;
+}
+
+.goods-pic {
+    background-color: var(--dark);
+    width: 80%;
+    height: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.goods h3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.goods button {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--red);
+    width: 141px;
+    height: 38px;
+    border: 0;
+    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 0% 50%, 0% 0);
+    color: white;
+    font-weight: 800;
+}
