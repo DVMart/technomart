@@ -265,3 +265,30 @@ section {
     display: block;
     margin-left: auto;
 }
+
+/* small */
+@media (width < 768px) {
+    .fixed-container {
+        max-width: 100%;
+    }
+
+    .products {
+        grid-template-columns: none;
+    }
+
+    .carusel {
+        grid-column:auto;
+        grid-row: span 2;
+    }
+}
+
+/* medium */
+@media (width > 768px) and (width < 992px) {
+    .fixed-container {
+        max-width: 720px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
