@@ -161,6 +161,10 @@ section > div > button {
     max-height: 90px;
 }
 
+.sm-product a {
+    text-decoration: none;
+}
+
 .carusel {
     grid-column: span 2;
     grid-row: span 2;
@@ -187,24 +191,25 @@ section > div > button {
     object-fit: cover;
 }
 
-.item-btn {
+.item-link {
     border: 0;
     height: 38px;
     background: rgba(255, 255, 255, 0.3);
     color: white;
     padding: 0 20px;
-    font-weight: 400;
     text-transform: uppercase;
+    align-content: center;
 }
 
-.catalog-btn {
+.catalog-link {
     border: 0;
     height: 38px;
     background: var(--red);
     color: white;
     padding: 0 20px;
-    font-weight: 400;
     text-transform: uppercase;
+    align-content: center;
+    text-decoration: none;
 }
 
 .materials, .delivery {
