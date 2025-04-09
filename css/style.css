@@ -194,6 +194,7 @@ section > div > button {
     color: white;
     padding: 0 20px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .catalog-btn {
