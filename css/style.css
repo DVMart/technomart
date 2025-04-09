@@ -35,7 +35,7 @@ section {
     margin-left: auto;
 }
 
-.dark {
+.dark-section {
     background-color: var(--dark);
 }
 
@@ -65,6 +65,7 @@ section {
 
 .top-menu button {
     border: 0;
+    color: white;
 }
 
 .top-menu div {
@@ -102,6 +103,7 @@ section {
     border: 0;
     background-color: transparent;
     height: 100%;
+    color: white;
 }
 
 .description {
