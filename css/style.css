@@ -29,6 +29,14 @@ section {
     background-color: white;
 }
 
+section > div > h2 {
+    text-transform: uppercase;
+}
+
+section > div > button {
+    text-transform: uppercase;
+}
+
 .fixed-container {
     max-width: 940px;
     margin-right: auto;
@@ -84,6 +92,7 @@ section {
     width: 220px;
     align-content: center;
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    text-transform: uppercase;
 }
 
 .order-btn {
@@ -194,6 +203,7 @@ section {
     color: white;
     padding: 0 20px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .materials, .delivery {
