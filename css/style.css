@@ -5,8 +5,15 @@
     --bezh: #F9F5F0;
 }
 
+@font-face {
+    font-family: 'Cuprum';
+    src: url('fonts/Cuprum-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
-    font-family: "Cuprum", Arial, sans-serif;
+    font-family: 'Cuprum', Arial, sans-serif;
 }
 
 header, .services {
@@ -22,13 +29,21 @@ section {
     background-color: white;
 }
 
+section > div > h2 {
+    text-transform: uppercase;
+}
+
+section > div > button {
+    text-transform: uppercase;
+}
+
 .fixed-container {
     max-width: 940px;
     margin-right: auto;
     margin-left: auto;
 }
 
-.dark {
+.dark-section {
     background-color: var(--dark);
 }
 
@@ -58,6 +73,7 @@ section {
 
 .top-menu button {
     border: 0;
+    color: white;
 }
 
 .top-menu div {
@@ -76,6 +92,7 @@ section {
     width: 220px;
     align-content: center;
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    text-transform: uppercase;
 }
 
 .order-btn {
@@ -95,6 +112,7 @@ section {
     border: 0;
     background-color: transparent;
     height: 100%;
+    color: white;
 }
 
 .description {
@@ -103,22 +121,22 @@ section {
 }
 
 .contacts {
-    width: 270px;
+    width: 300px;
     text-align: center;
 }
 
-.contacts > button {
+.contacts a {
+    text-decoration: none;
+}
+
+.contacts div {
     width: 100%;
     height: 45px;
     color: var(--red);
     background-color: var(--bg-gray);
     border-style: solid;
     border-color: white;
-}
-
-.contacts a {
-    font-size: 14px;
-
+    align-content: center;
 }
 
 .products {
@@ -141,6 +159,10 @@ section {
 .sm-product img {
     max-width: 90px;
     max-height: 90px;
+}
+
+.sm-product a {
+    text-decoration: none;
 }
 
 .carusel {
@@ -169,22 +191,25 @@ section {
     object-fit: cover;
 }
 
-.item-btn {
+.item-link {
     border: 0;
     height: 38px;
     background: rgba(255, 255, 255, 0.3);
     color: white;
     padding: 0 20px;
-    font-weight: 400;
+    text-transform: uppercase;
+    align-content: center;
 }
 
-.catalog-btn {
+.catalog-link {
     border: 0;
     height: 38px;
     background: var(--red);
     color: white;
     padding: 0 20px;
-    font-weight: 400;
+    text-transform: uppercase;
+    align-content: center;
+    text-decoration: none;
 }
 
 .materials, .delivery {
@@ -264,4 +289,31 @@ section {
 .new {
     display: block;
     margin-left: auto;
+}
+
+/* small */
+@media (width < 768px) {
+    .fixed-container {
+        max-width: 100%;
+    }
+
+    .products {
+        grid-template-columns: none;
+    }
+
+    .carusel {
+        grid-column:auto;
+        grid-row: span 2;
+    }
+}
+
+/* medium */
+@media (width > 768px) and (width < 992px) {
+    .fixed-container {
+        max-width: 720px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
