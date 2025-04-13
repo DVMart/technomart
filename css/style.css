@@ -8,7 +8,7 @@
 @font-face {
     font-family: 'Cuprum';
     src: url('fonts/Cuprum-VariableFont_wght.ttf') format('truetype');
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -71,6 +71,37 @@ section > div > button {
     background-color: #32425C;
 }
 
+.link-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    line-height: 60px;
+    padding: 0 10px;
+}
+
+.white-button {
+    line-height: 38px;
+    background: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+}
+
+.red-button {
+    line-height: 38px;
+    background: var(--red);
+    text-transform: uppercase;
+}
+
+.logo-btn {
+    background-color: var(--red);
+    height: 47px;
+    font-size: 20px;
+    padding: 0 30px;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    text-transform: uppercase;
+}
+
 .top-menu button {
     border: 0;
     color: white;
@@ -86,15 +117,6 @@ section > div > button {
     height: 100%;
 }
 
-.logo-btn {
-    background-color: var(--red);
-    height: 47px;
-    width: 220px;
-    align-content: center;
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-    text-transform: uppercase;
-}
-
 .order-btn {
     background-color: #63A63E;
     height: 42px;
@@ -102,10 +124,10 @@ section > div > button {
 
 .mid-menu-btn {
     height: 45px;
-    background-color: white;
-    border: 0;
-    padding: 0 20px;
+    background: white;
     margin: 5px 0;
+    color: var(--dark);
+    padding: 0 20px;
 }
 
 .sub-menu button {
@@ -127,16 +149,13 @@ section > div > button {
 
 .contacts a {
     text-decoration: none;
-}
-
-.contacts div {
-    width: 100%;
-    height: 45px;
+    padding: 12px 70px;
+    line-height: 45px;
     color: var(--red);
     background-color: var(--bg-gray);
     border-style: solid;
     border-color: white;
-    align-content: center;
+    align-items: center;
 }
 
 .products {
@@ -159,10 +178,6 @@ section > div > button {
 .sm-product img {
     max-width: 90px;
     max-height: 90px;
-}
-
-.sm-product a {
-    text-decoration: none;
 }
 
 .carusel {
