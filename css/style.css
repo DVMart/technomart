@@ -93,7 +93,7 @@ section > div > button {
     text-transform: uppercase;
 }
 
-.logo-btn {
+.logo-button {
     background-color: var(--red);
     height: 47px;
     font-size: 20px;
@@ -102,27 +102,27 @@ section > div > button {
     text-transform: uppercase;
 }
 
-.top-menu button {
-    border: 0;
-    color: white;
-}
-
-.top-menu div {
-    height: inherit;
-    padding: 0;
-}
-
-.dark-btn {
-    background-color: transparent;
-    height: 100%;
-}
-
-.order-btn {
-    background-color: #63A63E;
+.top-button {
     height: 42px;
+    padding: 0 20px;
 }
 
-.mid-menu-btn {
+.order-button {
+    background: #63A63E;
+    height: 42px;
+    padding: 0 20px;
+}
+
+.tel-button {
+    padding: 0 70px;
+    line-height: 45px;
+    color: var(--red);
+    background: var(--bg-gray);
+    border-style: solid;
+    border-color: white;
+}
+
+.auth-button {
     height: 45px;
     background: white;
     margin: 5px 0;
@@ -130,11 +130,12 @@ section > div > button {
     padding: 0 20px;
 }
 
-.sub-menu button {
-    border: 0;
-    background-color: transparent;
-    height: 100%;
-    color: white;
+.goods-button {
+    background-color: var(--red);
+    width: 141px;
+    height: 38px;
+    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 0% 50%, 0% 0);
+    font-weight: 800;
 }
 
 .description {
@@ -145,17 +146,6 @@ section > div > button {
 .contacts {
     width: 300px;
     text-align: center;
-}
-
-.contacts a {
-    text-decoration: none;
-    padding: 12px 70px;
-    line-height: 45px;
-    color: var(--red);
-    background-color: var(--bg-gray);
-    border-style: solid;
-    border-color: white;
-    align-items: center;
 }
 
 .products {
@@ -206,27 +196,6 @@ section > div > button {
     object-fit: cover;
 }
 
-.item-link {
-    border: 0;
-    height: 38px;
-    background: rgba(255, 255, 255, 0.3);
-    color: white;
-    padding: 0 20px;
-    text-transform: uppercase;
-    align-content: center;
-}
-
-.catalog-link {
-    border: 0;
-    height: 38px;
-    background: var(--red);
-    color: white;
-    padding: 0 20px;
-    text-transform: uppercase;
-    align-content: center;
-    text-decoration: none;
-}
-
 .materials, .delivery {
     background-color: #FFBF47;
 }
@@ -251,14 +220,6 @@ section > div > button {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.pop-header button {
-    background-color: var(--red);
-    border: 0;
-    color: white;
-    width: 192px;
-    height: 38px;
 }
 
 .pop-goods {
@@ -289,19 +250,7 @@ section > div > button {
     font-weight: 600;
 }
 
-.pop-goods button {
-    display: block;
-    margin: 0 auto;
-    background-color: var(--red);
-    width: 141px;
-    height: 38px;
-    border: 0;
-    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 0% 50%, 0% 0);
-    color: white;
-    font-weight: 800;
-}
-
-.new {
+.new-label {
     display: block;
     margin-left: auto;
 }
