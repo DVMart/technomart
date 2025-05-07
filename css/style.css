@@ -134,6 +134,10 @@ section > div > button {
     color: var(--red);
 }
 
+.description h1{
+    font-size: 100%;
+}
+
 .contacts {
     width: 300px;
     text-align: center;
