@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/DVMart/technomart#readme",
   "devDependencies": {
-    "sass": "^1.87.0"
+    "sass": "^1.89.0",
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.6"
   }
 }

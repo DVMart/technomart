@@ -1,8 +1,4 @@
 "use strict"
 
-let admin;
-let name = 'Джон';
-
-admin = name;
-
-alert('admin')
+// css/main.js
+import './styles.scss';
