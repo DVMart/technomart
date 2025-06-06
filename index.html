@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Техномарт</title>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=YOUR_API_KEY" type="text/javascript"></script>
 </head>
 
 <body class="page">
@@ -161,11 +162,28 @@
         </section>
         <section>
             <div class="container">
-                <h2>Компания "Техномарт"</h2>
-                <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не
-                    оставит
-                    равнодушными любителей сэкономить на гастарбайтерах.</p>
-            </div>
+                <div class="row">
+                    <div class="col-6">
+                        <h2>Компания "Техномарт"</h2>
+                        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+                            строительства не
+                            оставит
+                            равнодушными любителей сэкономить на гастарбайтерах.</p>
+                    </div>
+                    <div class="col-6">
+                        <div id="map" style="width: 600px; height: 400px;"></div>
+                        <script type="text/javascript">
+                            ymaps.ready(init);
+
+                            function init() {
+                                var myMap = new ymaps.Map("map", {
+                                    center: [55.76, 37.64], // Координаты центра карты
+                                    zoom: 10 // Уровень масштабирования
+                                });
+                            }
+                        </script>
+                    </div>
+                </div>
         </section>
     </main>
     <footer>
