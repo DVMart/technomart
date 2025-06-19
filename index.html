@@ -112,9 +112,11 @@
         </section>
         <section>
             <div class="container">
-                <div class="row pop-header">
-                    <h2>Популярные товары:</h2>
-                    <a href="#" class="link-button red-button">Все популярные товары</a>
+                <div class="row">
+                    <div class="col-12 pop-header">
+                        <h2>Популярные товары:</h2>
+                        <a href="#" class="link-button red-button">Все популярные товары</a>
+                    </div>
                 </div>
                 <div class="row pop-goods">
                     <div>
@@ -144,9 +146,11 @@
         </section>
         <section>
             <div class="container">
-                <div class="row pop-header">
-                    <h2>Популярные производители:</h2>
-                    <a href="#" class="link-button red-button">Все производители</a>
+                <div class="row">
+                    <div class="col-12 pop-header">
+                        <h2>Популярные производители:</h2>
+                        <a href="#" class="link-button red-button">Все производители</a>
+                    </div>
                 </div>
                 <div class="row">
                     123
@@ -169,19 +173,26 @@
                             строительства не
                             оставит
                             равнодушными любителей сэкономить на гастарбайтерах.</p>
+                        <p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+                        <p>Техномарт работает со многими транспортными компаниями:</p>
+                        <a href="#" class="link-button red-button">Заблудились? Напишите нам!</a>
                     </div>
                     <div class="col-6">
-                        <div id="map" style="width: 600px; height: 400px;"></div>
-                        <script type="text/javascript">
-                            ymaps.ready(init);
+                        <h2>Контакты</h2>
+                        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+                        <div id="map" style="width: 300px; height: 158px;">
+                            <script type="text/javascript">
+                                ymaps.ready(init);
 
-                            function init() {
-                                var myMap = new ymaps.Map("map", {
-                                    center: [55.76, 37.64], // Координаты центра карты
-                                    zoom: 10 // Уровень масштабирования
-                                });
-                            }
-                        </script>
+                                function init() {
+                                    var myMap = new ymaps.Map("map", {
+                                        center: [55.76, 37.64], // Координаты центра карты
+                                        zoom: 10 // Уровень масштабирования
+                                    });
+                                }
+                            </script>
+                        </div>
+                        <a href="#" class="link-button red-button">Заблудились? Напишите нам!</a>
                     </div>
                 </div>
         </section>
