@@ -16,7 +16,8 @@ body {
     font-family: 'Cuprum', Arial, sans-serif;
 }
 
-header, footer{
+header,
+footer {
     background-color: var(--dark);
 }
 
@@ -25,15 +26,16 @@ section {
     background-color: white;
 }
 
-section > div > h2 {
+section>div>h2 {
     text-transform: uppercase;
 }
 
-section > div > button {
+section>div>button {
     text-transform: uppercase;
 }
 
-.services, .menu {
+.services,
+.menu {
     background-color: var(--bg-gray);
 }
 
@@ -120,20 +122,12 @@ section > div > button {
     padding: 0 20px;
 }
 
-.goods-button {
-    background-color: var(--red);
-    width: 141px;
-    height: 38px;
-    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 0% 50%, 0% 0);
-    font-weight: 800;
-}
-
 .description {
     max-width: 197px;
     color: var(--red);
 }
 
-.description h1{
+.description h1 {
     font-size: 100%;
 }
 
@@ -170,7 +164,7 @@ section > div > button {
     position: relative;
 }
 
-.carusel > div {
+.carusel>div {
     position: absolute;
     top: 0;
     left: 0;
@@ -184,13 +178,14 @@ section > div > button {
     padding: 25px;
 }
 
-.carusel > img {
+.carusel>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.materials, .delivery {
+.materials,
+.delivery {
     background-color: #FFBF47;
 }
 
@@ -217,20 +212,18 @@ section > div > button {
     margin-bottom: 20px;
 }
 
-.pop-goods {
+.pop-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 318px;
     flex-wrap: wrap;
     grid-gap: 10px;
 }
 
-.pop-goods > div {
-    max-width: 220px;
+.good>div {
     height: 100%;
     border: 1px solid #EAEAEA;
     align-content: end;
-    padding-bottom: 20px;
+    padding: 0 0 20px 0;
 }
 
 .goods-pic {
@@ -240,14 +233,45 @@ section > div > button {
     margin: 0 auto;
 }
 
-.pop-goods h3 {
+.good {
+    grid-auto-rows: 318px;
+}
+
+.good h3 {
     text-align: center;
     font-weight: 600;
+    max-width: 250px;
+}
+
+.goods-button {
+    background-color: var(--red);
+    width: 141px;
+    height: 38px;
+    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 0% 50%, 0% 0);
+    font-weight: 800;
 }
 
 .new-label {
     display: block;
     margin-left: auto;
+}
+
+.vendor {
+    grid-auto-rows: 145px;
+}
+
+.vendor>div {
+    height: 100%;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.vendor img {
+    max-width: 205px;
+    height: auto;
 }
 
 #map {
@@ -261,7 +285,7 @@ section > div > button {
     }
 
     .carusel {
-        grid-column:auto;
+        grid-column: auto;
         grid-row: span 2;
     }
 }
