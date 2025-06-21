@@ -1,3 +1,55 @@
-<svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="21.2133" y="-23" width="100" height="30" transform="rotate(45 21.2133 -23)" fill="#EE3643"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="69"
+   height="69"
+   viewBox="0 0 69 69"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="new.svg"
+   inkscape:version="1.4.2 (1:1.4.2+202505120737+ebf0e940d0)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="8.0637335"
+     inkscape:cx="51.589006"
+     inkscape:cy="29.700882"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <rect
+     x="-1.2633868"
+     y="-31.263525"
+     width="100"
+     height="30"
+     fill="#ee3643"
+     id="rect1"
+     transform="rotate(45)" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:0.8;font-family:Cuprum;-inkscape-font-specification:Cuprum;text-align:center;letter-spacing:0.868098px;word-spacing:0px;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:3.15822;stroke-linecap:round"
+     x="48.336605"
+     y="-10.663534"
+     id="text1"
+     transform="rotate(45)"><tspan
+       sodipodi:role="line"
+       id="tspan1"
+       x="48.770653"
+       y="-10.663534"
+       style="font-size:16px;stroke-width:3.15822">NEW</tspan></text>
 </svg>

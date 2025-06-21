@@ -278,6 +278,20 @@ section>div>button {
     margin-bottom: 20px;
 }
 
+.red-line {
+    background-color: var(--red);
+    height: 7px;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-footer {
+    background-color: var(--bg-gray);
+    border: none;
+}
+
 /* small */
 @media (width < 768px) {
     .products {
