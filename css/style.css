@@ -83,6 +83,7 @@ section>div>button {
     height: 38px;
     background: var(--red);
     text-transform: uppercase;
+    border: none;
 }
 
 .logo-button {
@@ -285,11 +286,36 @@ section>div>button {
 
 .modal-header {
     border: none;
+    display: flex;
+    justify-content: end;
+}
+
+.modal-content {
+    width: 620px;
+}
+
+.form-group {
+    width: 100%;
+
+}
+
+.name-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 .modal-footer {
     background-color: var(--bg-gray);
     border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary {
+    width: 100%;
 }
 
 /* small */
