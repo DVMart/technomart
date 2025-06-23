@@ -292,11 +292,12 @@ section>div>button {
 
 .modal-content {
     width: 620px;
+    height: 430px;
+
 }
 
 .form-group {
     width: 100%;
-
 }
 
 .name-email {
@@ -307,11 +308,16 @@ section>div>button {
     margin-bottom: 20px;
 }
 
+textarea {
+    height: 100px;
+}
+
 .modal-footer {
     background-color: var(--bg-gray);
     border: none;
     display: flex;
     justify-content: center;
+    height: 112px;
 }
 
 .btn-primary {
