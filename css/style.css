@@ -1,8 +1,15 @@
 :root {
     --dark: #293449;
+    --dark2: #32425C;
     --bg-gray: #F1F5F7;
     --red: #EE3643;
     --bezh: #F9F5F0;
+    --green: #63A63E;
+    --border-gray: #EAEAEA;
+    --good-yellow: #FFBF47;
+    --good-green: #8ED78F;
+    --good-pink:  #DC91D8;
+    --good-blue: #3BBCE3;
 }
 
 @font-face {
@@ -60,7 +67,7 @@ section>div>button {
     justify-content: space-evenly;
     align-items: center;
     height: 60px;
-    background-color: #32425C;
+    background-color: var(--dark2);
 }
 
 .link-button {
@@ -101,7 +108,7 @@ section>div>button {
 }
 
 .order-button {
-    background: #63A63E;
+    background: var(--green);
     height: 42px;
     padding: 0 20px;
 }
@@ -187,19 +194,19 @@ section>div>button {
 
 .materials,
 .delivery {
-    background-color: #FFBF47;
+    background-color: var(--good-yellow);
 }
 
 .tools {
-    background-color: #3BBCE3;
+    background-color: var(--good-blue);
 }
 
 .tech {
-    background-color: #DC91D8;
+    background-color: var(--good-pink);
 }
 
 .discount {
-    background-color: #8ED78F;
+    background-color: var(--good-green);
 }
 
 .pop-header {
@@ -222,7 +229,7 @@ section>div>button {
 
 .good>div {
     height: 100%;
-    border: 1px solid #EAEAEA;
+    border: 1px solid var(--border-gray);
     align-content: end;
     padding: 0 0 20px 0;
 }
@@ -263,7 +270,7 @@ section>div>button {
 
 .vendor>div {
     height: 100%;
-    border: 1px solid #EAEAEA;
+    border: 1px solid var(--border-gray);
     display: flex;
     justify-content: center;
     align-items: center;
