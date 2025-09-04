@@ -19,4 +19,14 @@ export default defineConfig({
       },
     }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import './src/assets/styles/style.scss';`,
+      },
+    },
+  },
+  optimizeDeps: {
+    include: ['src/components/bootstrap.bundle.min.js'],
+  },
 })
