@@ -1,11 +1,10 @@
+import { resolve } from 'path'
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
     ViteImageOptimizer({
       png: { quality: 80 },
       jpeg: { quality: 75 },
@@ -19,14 +18,4 @@ export default defineConfig({
       },
     }),
   ],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import './src/assets/styles/style.scss';`,
-      },
-    },
-  },
-  optimizeDeps: {
-    include: ['src/components/bootstrap.bundle.min.js'],
-  },
 })
