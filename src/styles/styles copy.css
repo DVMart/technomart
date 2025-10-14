@@ -172,7 +172,7 @@ section>div>button {
     position: relative;
 }
 
-.carusel>div {
+.carusel > div {
     position: absolute;
     top: 0;
     left: 0;
