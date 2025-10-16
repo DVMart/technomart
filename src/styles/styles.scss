@@ -51,10 +51,35 @@ section {
 
 .top-menu {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: space-between;
   align-items: start;
   height: 42px;
+
+  >div {
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .top-button,
+  .order-button {
+    height: 42px;
+    padding: 0 20px;
+  }
+
+  .order-button {
+    background: $green;
+  }
+}
+
+.search-form input {
+  max-width: 270px;
+  height: 43px;
+  padding: 0 10px 0 49px;
+  color: white;
+  background-color: transparent;
+  border: 0;
 }
 
 .mid-menu {
@@ -103,16 +128,6 @@ section {
   padding: 0 30px;
   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
   text-transform: uppercase;
-}
-
-.top-button,
-.order-button {
-  height: 42px;
-  padding: 0 20px;
-}
-
-.order-button {
-  background: $green;
 }
 
 .tel-button {
@@ -236,7 +251,7 @@ section {
     height: 100%;
     border: 1px solid $border-gray;
     align-content: end;
-    padding-bottom: 20px;
+    padding: 0 0 20px;
   }
 
   h3 {
@@ -254,7 +269,7 @@ section {
 
   .goods-button {
     background-color: $red;
-    width: 141px;
+    min-width: 141px;
     height: 38px;
     clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0 100%, 0 50%, 0 0);
     font-weight: 800;
