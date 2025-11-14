@@ -8,6 +8,7 @@
     <link rel="icon" href="/favicon.ico" />
     <title>Техномарт</title>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=YOUR_API_KEY" type="text/javascript"></script>
+    <script src="/src/components/search.js"></script>
 </head>
 
 <body class="page">
@@ -18,14 +19,14 @@
                     <div>
                         <a href="#" class="link-button logo-button">Техномарт</a>
                         <form class="search-form" action="#" method="post">
-                            <label for="search-input">
+                            <label for="searchInput">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-                                    <path fill="#616978"
+                                    <!-- <path fill="#616978"
                                         d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z">
-                                    </path>
+                                    </path> -->
                                 </svg>
                             </label>
-                            <input type="search" id="search-input" placeholder="Поиск:">
+                            <input type="text" id="searchInput" oninput="searchProducts()" placeholder="Поиск: " />
                         </form>
                     </div>
                     <div>
@@ -127,27 +128,49 @@
                         <a href="#" class="link-button red-button">Все популярные товары</a>
                     </div>
                 </div>
-                <div class="row pop-cards good">
-                    <div>
+                <div class="row pop-cards good" id="productList">
+                    <div class="instrument">
                         <img class="goods-pic" src="img/BGF9000.png" alt="">
-                        <h3>Перфоратор BOSCH BFG 9000</h3>
+                        <h3>Перфоратор МАЛЫШ 2000</h3>
                         <a href="#" class="link-button goods-button">25500Р.</a>
                     </div>
-                    <div>
+                    <div class="instrument">
                         <img class="new-label" src="img/new.svg" alt="">
                         <img class="goods-pic" src="img/BGF3000.png" alt="">
-                        <h3>Перфоратор BOSCH BFG 3000</h3>
+                        <h3>Перфоратор КРЕПЫШ 3000</h3>
                         <a href="#" class="link-button goods-button">15500Р.</a>
                     </div>
-                    <div>
+                    <div class="instrument">
                         <img class="goods-pic" src="img/BGF6000.png" alt="">
-                        <h3>Перфоратор BOSCH BFG 6000</h3>
+                        <h3>Перфоратор ПЛОХИШ 6000</h3>
                         <a href="#" class="link-button goods-button">25500Р.</a>
                     </div>
-                    <div>
+                    <div class="instrument">
                         <img class="new-label" src="img/new.svg" alt="">
                         <img class="goods-pic" src="img/BGF3000.png" alt="">
-                        <h3>Перфоратор BOSCH BFG 2000</h3>
+                        <h3>Перфоратор ДРУГ 9000</h3>
+                        <a href="#" class="link-button goods-button">12500Р.</a>
+                    </div>
+                    <div class="instrument">
+                        <img class="new-label" src="img/new.svg" alt="">
+                        <img class="goods-pic" src="img/BGF3000.png" alt="">
+                        <h3>Перфоратор БРАТ 2000</h3>
+                        <a href="#" class="link-button goods-button">12500Р.</a>
+                    </div>
+                    <div class="instrument">
+                        <img class="goods-pic" src="img/BGF3000.png" alt="">
+                        <h3>Перфоратор КУМ BFG 3000</h3>
+                        <a href="#" class="link-button goods-button">12500Р.</a>
+                    </div>
+                    <div  class="instrument">
+                        <img class="new-label" src="img/new.svg" alt="">
+                        <img class="goods-pic" src="img/BGF3000.png" alt="">
+                        <h3>Перфоратор СВАТ BFG 6000</h3>
+                        <a href="#" class="link-button goods-button">12500Р.</a>
+                    </div>
+                    <div  class="instrument">
+                        <img class="goods-pic" src="img/BGF3000.png" alt="">
+                        <h3>Перфоратор СОСЕД BFG 12000</h3>
                         <a href="#" class="link-button goods-button">12500Р.</a>
                     </div>
                 </div>
