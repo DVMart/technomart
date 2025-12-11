@@ -1,3 +1,5 @@
+import './styles/bootstrap.min.css';
 import './styles/styles.scss';
-import './styles/bootstrap.min.css'
-import './components/search.js'
+import { searchProducts } from './scripts/search.js';
+
+window.searchProducts = searchProducts;

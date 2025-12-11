@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="/src/manifest.webmanifest" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/marifest.webmanifest" />
+    <link rel="icon" href="/public/favicon.ico" />
     <title>Техномарт</title>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=YOUR_API_KEY" type="text/javascript"></script>
-    <script src="/src/components/search.js"></script>
 </head>
 
 <body class="page">
@@ -26,7 +25,7 @@
                                     </path> -->
                                 </svg>
                             </label>
-                            <input type="text" id="searchInput" oninput="searchProducts()" placeholder="Поиск: " />
+                            <input type="text" id="search-input" oninput="searchProducts()" placeholder="Поиск: " />
                         </form>
                     </div>
                     <div>
@@ -128,7 +127,7 @@
                         <a href="#" class="link-button red-button">Все популярные товары</a>
                     </div>
                 </div>
-                <div class="row pop-cards good" id="productList">
+                <div class="row pop-cards good" id="product-list">
                     <div class="instrument">
                         <img class="goods-pic" src="img/BGF9000.png" alt="">
                         <h3>Перфоратор МАЛЫШ 2000</h3>
